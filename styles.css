@@ -51,7 +51,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0;
 }
 
@@ -182,6 +183,26 @@ h1 {
   letter-spacing: -0.03em;
 }
 
+.focus-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 820px;
+  margin-top: 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.focus-strip li {
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -265,7 +286,8 @@ h3 {
   min-width: 0;
 }
 
-.research-points {
+.research-points,
+.project-points {
   margin: 18px 0 0;
   padding-left: 1.1em;
   color: var(--muted);
@@ -273,7 +295,8 @@ h3 {
   line-height: 1.55;
 }
 
-.research-points li + li {
+.research-points li + li,
+.project-points li + li {
   margin-top: 10px;
 }
 
@@ -321,6 +344,11 @@ h3 {
 .project-copy .scope {
   grid-column: auto;
   margin-top: 14px;
+}
+
+.militech-project .project-copy > p:first-child {
+  color: var(--ink);
+  font-weight: 620;
 }
 
 .external-link {
@@ -453,6 +481,10 @@ h3 {
 
   h1 {
     font-size: clamp(52px, 18vw, 78px);
+  }
+
+  .focus-strip li {
+    white-space: normal;
   }
 
   .hero-actions {

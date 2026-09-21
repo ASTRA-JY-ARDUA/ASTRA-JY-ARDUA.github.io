@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
-      content="JunYoung Ahn is a mechanical engineering student at Seoul National University and a visiting researcher at Stanford Medicine, working on fluid mechanics, medical imaging, and measurement uncertainty."
+      content="JunYoung Ahn is a mechanical engineering student at Seoul National University working across control-oriented HMI, flight-control interfaces, signal processing, medical imaging, and uncertainty quantification."
     />
     <title>JunYoung Ahn</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -27,13 +27,21 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="name">
-        <p class="kicker">Seoul National University · Stanford Medicine</p>
+        <p class="kicker">Control · HMI · Signal processing · Medical imaging</p>
         <h1 id="name">JunYoung Ahn</h1>
         <p class="intro">
-          I am a mechanical engineering student at Seoul National University and a visiting
-          researcher at Stanford Medicine. My work sits around fluid mechanics, medical imaging,
-          uncertainty quantification, and human-centered technology.
+          I am a mechanical engineering student at Seoul National University working across
+          control-oriented HMI, flight-control interfaces, signal processing, medical imaging, and
+          uncertainty quantification. I turn noisy physical measurements into commands, estimates,
+          and decisions that a system can trust.
         </p>
+        <ul class="focus-strip" aria-label="Core technical focus areas">
+          <li>Control & HMI</li>
+          <li>Flight-control interfaces</li>
+          <li>Signal processing</li>
+          <li>Medical imaging</li>
+          <li>Uncertainty quantification</li>
+        </ul>
         <div class="hero-actions" aria-label="Primary links">
           <a href="mailto:starlight051212@snu.ac.kr">starlight051212@snu.ac.kr</a>
           <a href="assets/JunYoung-Ahn-Resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
@@ -43,7 +51,7 @@
       <section class="section" id="research" aria-labelledby="research-title">
         <div class="section-heading">
           <p class="section-label">Research</p>
-          <h2 id="research-title">Measurement, flow, and confidence.</h2>
+          <h2 id="research-title">Signals, control, and confidence.</h2>
         </div>
         <div class="entry-list">
           <article class="entry">
@@ -97,6 +105,10 @@
                 National Defense track, a joint program of the Ministry of National Defense and the
                 Ministry of Science and ICT.
               </p>
+              <p>
+                This track connects my interests in control, flight systems, signal processing, and
+                mission-focused engineering with a research-driven defense service path.
+              </p>
               <p class="highlight-line">Elite track for research-driven national defense service.</p>
             </div>
           </article>
@@ -106,23 +118,41 @@
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
           <p class="section-label">Selected work</p>
-          <h2 id="projects-title">Projects that turn signals into useful interfaces.</h2>
+          <h2 id="projects-title">Interfaces for control, sensing, and decisions.</h2>
         </div>
         <div class="project-list">
-          <article class="project">
+          <article class="project militech-project">
             <div class="project-title">
               <h3>Militech Challenge</h3>
-              <p>Wearable sensing challenge · Human-machine interaction</p>
+              <p>One-handed drone-control HMI · Signal processing · Flight interface</p>
             </div>
-            <p>
-              A smart-glove challenge project combining flexible carbon nanotube strain sensors,
-              signal processing, and human factors to explore how hand motion can become a reliable
-              control input.
-            </p>
-            <p class="scope">
-              Scope note: signal interpretation was evaluated in simulation; human-factors and
-              end-to-end evaluation remain proposed scope.
-            </p>
+            <div class="project-copy">
+              <p>
+                A control-oriented wearable HMI project motivated by MUM-T operations: replacing a
+                two-handed controller with a single-hand smart glove so the other hand remains free
+                for communication, cover, or mission tasks.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Built around CNT strain sensors that translate finger and wrist motion into
+                  electrical signals for command inference.
+                </li>
+                <li>
+                  Designed a signal-processing pipeline for noise filtering, baseline drift
+                  tracking, finger-coupling compensation, intent recovery, and confidence-gated
+                  command generation.
+                </li>
+                <li>
+                  Mapped restored hand intent into flight-control commands through a joystick-input
+                  layer with arming, tactical modes, emergency stop, and receiver-side safety logic.
+                </li>
+              </ul>
+              <p class="scope">
+                Simulation results in the draft report showed reduced finger cross-coupling, stable
+                drift handling, blocked antagonistic inputs, and emergency-stop behavior; human-factor
+                and full flight evaluation remain proposed scope.
+              </p>
+            </div>
           </article>
 
           <article class="project">
