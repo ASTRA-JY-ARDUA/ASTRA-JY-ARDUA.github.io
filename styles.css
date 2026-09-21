@@ -253,11 +253,28 @@ h3 {
 }
 
 .entry > p,
+.entry-body > p,
 .project > p,
 .background-grid p,
 .contact h2 {
   font-size: clamp(17px, 2vw, 20px);
   line-height: 1.55;
+}
+
+.entry-body {
+  min-width: 0;
+}
+
+.research-points {
+  margin: 18px 0 0;
+  padding-left: 1.1em;
+  color: var(--muted);
+  font-size: clamp(15px, 1.7vw, 17px);
+  line-height: 1.55;
+}
+
+.research-points li + li {
+  margin-top: 10px;
 }
 
 .project {
