@@ -299,6 +299,40 @@ h3 {
   color: var(--ink);
 }
 
+.project-copy {
+  min-width: 0;
+}
+
+.project-copy strong {
+  font-weight: 720;
+}
+
+.project-copy .scope {
+  grid-column: auto;
+  margin-top: 14px;
+}
+
+.external-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 20px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.external-link:hover {
+  background: var(--ink);
+  color: var(--bg);
+  transform: translateY(-1px);
+}
+
 .background-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
