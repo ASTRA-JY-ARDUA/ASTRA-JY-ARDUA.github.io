@@ -277,6 +277,17 @@ h3 {
   margin-top: 10px;
 }
 
+.highlight-line {
+  display: inline-block;
+  margin-top: 16px;
+  border-left: 2px solid var(--ink);
+  padding-left: 14px;
+  color: var(--ink);
+  font-size: clamp(16px, 1.8vw, 18px);
+  font-weight: 720;
+  line-height: 1.35;
+}
+
 .project {
   display: grid;
   grid-template-columns: minmax(220px, 0.34fr) minmax(0, 1fr);
